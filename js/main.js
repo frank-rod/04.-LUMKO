@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 1, title: 'Dra. Sara Treviño', category: 'personales', href: 'https://www.drasaratrevino.com/', description: 'Sitio personal profesional', image: 'assets/images/drasaratrevino.png' },
         { id: 2, title: 'FJROD', category: 'personales', href: 'https://fjrod.com/', description: 'Portafolio personal creativo', image: 'assets/images/fjrod.png' },
         { id: 3, title: 'TLT Law Firm', category: 'corporativos', href: 'https://www.tltlawfirm.com/', description: 'Sitio corporativo legal', image: 'assets/images/tltlawfirm.png' },
-        { id: 4, title: 'S. Careaga', category: 'corporativos', href: 'http://scareaga.com/', description: 'Presencia corporativa profesional', image: 'assets/images/scareaga.png' },
+        { id: 4, title: 'S. Careaga', category: 'personales', href: 'http://scareaga.com/', description: 'Presencia corporativa profesional', image: 'assets/images/scareaga.png' },
         { id: 5, title: 'Blake Corporation', category: 'corporativos', href: 'https://www.blakecorporation.com/', description: 'Web corporativa empresarial', image: '' },
         { id: 6, title: 'Cinco de Venus', category: 'real-estate', href: 'https://cincodevenus.com/', description: 'Proyecto inmobiliario premium', image: 'assets/images/cincodevenus.png' },
         { id: 7, title: 'RS Events Cancún', category: 'eventos', href: 'https://www.rseventscancun.com/', description: 'Organización de eventos', image: 'assets/images/rsevents.png' },

@@ -144,6 +144,59 @@ a {
     width: 100%;
 }
 
+/* Liquid Glass Button */
+.btn-glass {
+    position: relative;
+    display: inline-block;
+    padding: 18px 50px;
+    border-radius: 24px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 1;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+.btn-glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    backdrop-filter: blur(3px);
+    filter: url(#glass-distortion);
+    z-index: 0;
+}
+
+.btn-glass::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+                inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.btn-glass span {
+    position: relative;
+    z-index: 5;
+    color: #0e3d4f;
+}
+
+.btn-glass:hover {
+    padding: 20px 55px;
+    border-radius: 28px;
+    color: var(--color-white);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -385,6 +438,23 @@ a {
     line-height: 1.3;
 }
 
+.trust-text {
+    margin-top: 30px;
+}
+
+.trust-text h3 {
+    color: var(--color-dark);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.trust-text p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* Section Header */
 .section-header {
     margin-bottom: 60px;
@@ -606,14 +676,14 @@ a {
 
 .filter-btn {
     background: transparent;
-    border: 1px solid var(--color-text-muted);
+    border: 1px solid rgba(255,255,255,0.4);
     padding: 8px 16px;
     border-radius: 50px;
     cursor: pointer;
     font-family: var(--font-body);
     font-weight: 500;
     transition: var(--transition);
-    color: var(--color-text-muted);
+    color: rgba(255,255,255,0.7);
 }
 
 .filter-btn.active, .filter-btn:hover {
@@ -622,12 +692,12 @@ a {
     border-color: var(--color-primary);
 }
 
-.portafolio {
-    background-color: var(--color-light);
-}
-
 .portafolio .section-header h2 {
     font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.portafolio .subtitle {
+    color: rgba(255,255,255,0.7);
 }
 
 /* Card Stack */
@@ -765,10 +835,19 @@ a {
 }
 
 /* Nosotros / Team */
-.team-intro {
+.team .section-header h2 {
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.section-header .team-intro {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
+    color: var(--color-white);
+}
+
+.team-intro strong {
+    color: var(--color-primary);
 }
 
 .team-grid {
@@ -780,10 +859,14 @@ a {
 
 .team-member {
     text-align: center;
-    background: var(--color-white);
+    background: #e8e0d8;
     padding: 40px 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.team-member h3 {
+    color: var(--color-dark);
 }
 
 .member-img {
@@ -803,6 +886,27 @@ a {
     margin-top: 20px;
 }
 
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.linkedin-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.linkedin-link img {
+    height: 28px;
+    transition: var(--transition);
+}
+
+.linkedin-link:hover img {
+    transform: scale(1.1);
+}
+
 .member-details li {
     position: relative;
     padding-left: 20px;
@@ -820,6 +924,10 @@ a {
 }
 
 /* Contacto */
+.contacto h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -840,7 +948,7 @@ a {
 }
 
 .contact-form {
-    background: var(--color-white);
+    background: #e8e0d8;
     padding: 40px;
     border-radius: 12px;
     color: var(--color-text);
@@ -895,6 +1003,11 @@ input:focus, select:focus {
     margin-bottom: 40px;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.footer-isotipo {
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 .footer-logo h2 {

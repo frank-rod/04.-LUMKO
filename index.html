@@ -35,8 +35,6 @@
                 <li><a href="#home" class="nav-links">HOME</a></li>
                 <li><a href="#paquetes" class="nav-links">PAQUETES WEB</a></li>
                 <li><a href="#portafolio" class="nav-links">PORTAFOLIO</a></li>
-                <li><a href="#proceso" class="nav-links">PROCESO</a></li>
-                <li><a href="#faqs" class="nav-links">FAQS</a></li>
                 <li><a href="#contacto" class="nav-links btn-nav">CONTACTO</a></li>
             </ul>
         </div>
@@ -101,6 +99,10 @@
                     <span>Branding Básico</span>
                 </div>
             </div>
+            <div class="trust-text text-center">
+                <h3>Diseño, Desarrollo y Hosting. Todo Incluido.</h3>
+                <p>Sitios web modernos, rápidos y efectivos. Entrega en 3-6 días hábiles con todo lo que necesitas para destacar online.</p>
+            </div>
         </div>
     </section>
 
@@ -126,7 +128,6 @@
                         <li>Formulario de contacto</li>
                         <li>Hosting incluido</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline">Más información</a>
                 </div>
                 <div class="paquete-card fade-in">
                     <div class="paquete-icon icon-lottie" data-json="assets/lottie/business.json"></div>
@@ -138,7 +139,6 @@
                         <li>Integración redes sociales</li>
                         <li>Hosting + dominio</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline">Más información</a>
                 </div>
                 <div class="paquete-card fade-in">
                     <div class="paquete-icon icon-lottie" data-json="assets/lottie/Restaurante.json"></div>
@@ -150,7 +150,6 @@
                         <li>Mapa y horarios</li>
                         <li>Hosting incluido</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline">Más información</a>
                 </div>
                 <div class="paquete-card fade-in">
                     <div class="paquete-icon icon-lottie" data-json="assets/lottie/events.json"></div>
@@ -162,7 +161,6 @@
                         <li>Cuenta regresiva</li>
                         <li>Detalles del evento</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline">Más información</a>
                 </div>
                 <div class="paquete-card fade-in">
                     <div class="paquete-icon icon-lottie" data-json="assets/lottie/ecommerce.json"></div>
@@ -174,14 +172,28 @@
                         <li>Carrito de compras</li>
                         <li>Panel de administración</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline">Más información</a>
                 </div>
             </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#contacto" class="btn-glass"><span>Más Información</span></a>
+            </div>
+            <!-- SVG Filter for glass effect -->
+            <svg style="display:none">
+                <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="turbulence"/>
+                    <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap"/>
+                    <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100" lightingColor="white" result="specLight">
+                        <fePointLight x="-200" y="-200" z="300"/>
+                    </feSpecularLighting>
+                    <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage"/>
+                    <feDisplacementMap in="SourceGraphic" in2="softMap" scale="200" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+            </svg>
         </div>
     </section>
 
     <!-- PORTAFOLIO -->
-    <section id="portafolio" class="portafolio section">
+    <section id="portafolio" class="portafolio section bg-dark">
         <div class="container">
             <div class="section-header text-center">
                 <h2>PORTAFOLIO</h2>
@@ -206,7 +218,7 @@
     </section>
 
     <!-- NOSOTROS -->
-    <section id="nosotros" class="team section">
+    <section id="nosotros" class="team section bg-dark">
         <div class="container">
             <div class="section-header text-center">
                 <h2>MEET OUR TEAM</h2>
@@ -217,8 +229,8 @@
 
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-img bg-placeholder">
-                        <i class="fa-solid fa-user-tie fa-4x text-light"></i>
+                    <div class="member-img">
+                        <img src="assets/images/santiago.jpg" alt="Santiago C">
                     </div>
                     <h3>SANTIAGO C</h3>
                     <ul class="member-details">
@@ -226,10 +238,13 @@
                         <li>Licenciado en Mercadotecnia, especialidad en e-commerce</li>
                         <li>Background de agencia, corporativo y pymes</li>
                     </ul>
+                    <a href="https://www.linkedin.com/in/santicareaga/" target="_blank" class="linkedin-link">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn">
+                    </a>
                 </div>
                 <div class="team-member">
-                    <div class="member-img bg-placeholder">
-                        <i class="fa-solid fa-user-tie fa-4x text-light"></i>
+                    <div class="member-img">
+                        <img src="assets/images/frank.jpg" alt="Frank R">
                     </div>
                     <h3>FRANK R</h3>
                     <ul class="member-details">
@@ -237,6 +252,9 @@
                         <li>Licenciado en Finanzas</li>
                         <li>Especialista en Business Intelligence y Data Science</li>
                     </ul>
+                    <a href="https://www.linkedin.com/in/fjrodriguez00/" target="_blank" class="linkedin-link">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn">
+                    </a>
                 </div>
             </div>
         </div>
@@ -319,7 +337,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>LUMKO</h2>
+                    <img src="assets/icons/branding.png" alt="LUMKO" class="footer-isotipo">
                     <p>Diseño web. Rápido. Efectivo. A tu medida.</p>
                 </div>
                 <div class="footer-links">
