@@ -799,7 +799,7 @@ a {
 
 .portafolio {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/nuevaportafolio.png') center center / cover no-repeat;
+    background: #000;
     /* Fallback in case image doesn't load via CSS relative path */
 }
 
