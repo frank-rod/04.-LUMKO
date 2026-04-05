@@ -49,14 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeIndex = 0;
     let autoInterval = null;
 
-    const CARD_W = 480;
-    const CARD_H = 320;
-    const OVERLAP = 0.48;
-    const SPREAD_DEG = 48;
-    const DEPTH = 140;
-    const TILT_X = 12;
-    const LIFT = 22;
-    const MAX_VISIBLE = 7;
+    const isMobile = window.innerWidth <= 768;
+    const CARD_W = isMobile ? 240 : 480;
+    const CARD_H = isMobile ? 180 : 320;
+    const OVERLAP = isMobile ? 0.55 : 0.48;
+    const SPREAD_DEG = isMobile ? 30 : 48;
+    const DEPTH = isMobile ? 80 : 140;
+    const TILT_X = isMobile ? 8 : 12;
+    const LIFT = isMobile ? 15 : 22;
+    const MAX_VISIBLE = isMobile ? 3 : 7;
 
     function getMaxOffset() { return Math.floor(MAX_VISIBLE / 2); }
 

@@ -24,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -1163,7 +1164,7 @@ input:focus, select:focus {
     }
 
     .paquetes-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card-stack-card {
@@ -1236,29 +1237,27 @@ input:focus, select:focus {
     }
 
     .beneficios-timeline::before {
-        left: 35px;
+        display: none;
     }
 
     .beneficio-row,
     .beneficio-row.reverse {
-        flex-direction: row;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
 
     .beneficio-row .beneficio-text,
     .beneficio-row.reverse .beneficio-text {
-        text-align: left;
-        flex: 1;
+        text-align: center;
+        grid-column: auto;
     }
 
     .beneficio-row .beneficio-icon,
     .beneficio-row.reverse .beneficio-icon {
-        order: 0;
-    }
-
-    .beneficio-row::after,
-    .beneficio-row.reverse::after {
-        display: none;
+        grid-column: auto;
     }
 
     .beneficio-icon {
@@ -1273,7 +1272,7 @@ input:focus, select:focus {
 
     .paquetes-grid {
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -1281,18 +1280,24 @@ input:focus, select:focus {
         padding: 25px 15px;
     }
 
+    .portafolio {
+        overflow: hidden;
+    }
+
     .card-stack-wrapper {
         overflow: hidden;
+        max-width: 100vw;
     }
 
     .card-stack-stage {
         height: 280px;
         overflow: hidden;
+        max-width: 100%;
     }
 
     .card-stack-card {
-        width: 260px !important;
-        height: 200px !important;
+        width: 240px !important;
+        height: 180px !important;
     }
 
     .card-stack-card .card-content h4 {
