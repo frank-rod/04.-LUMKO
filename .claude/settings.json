@@ -3,7 +3,8 @@
     "allow": [
       "Bash(ls \"/Users/frank/Desktop/Webs/04. LUMKO/\"*.mp4)",
       "Bash(ls \"/Users/frank/Desktop/Webs/04. LUMKO/assets/\"**/*.mp4)",
-      "Bash(ls \"/Users/frank/Desktop/Webs/04. LUMKO/\"paquetesweb*)"
+      "Bash(ls \"/Users/frank/Desktop/Webs/04. LUMKO/\"paquetesweb*)",
+      "Bash(ls \"/Users/frank/Desktop/Webs/04. LUMKO/\"nuevaportafolio*)"
     ]
   }
 }
