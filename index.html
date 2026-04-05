@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMKO | Diseño Web Rápido y Efectivo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- FontAwesome for temporary icons until lottie/json icons are added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo/logolargoparafondososcuros.PNG" alt="LUMKO">
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-links">HOME</a></li>
+                <li><a href="#paquetes" class="nav-links">PAQUETES WEB</a></li>
+                <li><a href="#portafolio" class="nav-links">PORTAFOLIO</a></li>
+                <li><a href="#proceso" class="nav-links">PROCESO</a></li>
+                <li><a href="#faqs" class="nav-links">FAQS</a></li>
+                <li><a href="#contacto" class="nav-links btn-nav">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="hero-video">
+                <source src="assets/video/VideoHero.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Diseño web.<br>
+                <span class="hero-highlight">
+                    Rápido. Efectivo.
+                    <svg class="highlight-graphic" viewBox="0 0 500 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ellipse -->
+                        <ellipse cx="250" cy="90" rx="245" ry="75" fill="none" stroke="var(--color-primary-light)" stroke-width="2" transform="rotate(-3 250 90)" />
+                        <!-- Sparkle 1 -->
+                        <path d="M 480 35 Q 485 35 485 30 Q 485 35 490 35 Q 485 35 485 40 Q 485 35 480 35 Z" fill="var(--color-primary-light)"/>
+                        <!-- Sparkle 2 -->
+                        <path d="M 455 55 Q 462 55 462 48 Q 462 55 469 55 Q 462 55 462 62 Q 462 55 455 55 Z" fill="var(--color-primary-light)"/>
+                    </svg>
+                </span><br>A tu medida.</h1>
+            <p>Diseñamos soluciones digitales que conectan marcas con su audiencia.</p>
+            <a href="#contacto" class="btn btn-primary">Inicia tu proyecto</a>
+          </div>
+        </div>
+    </header>
+
+    <!-- SELLOS DE CONFIANZA -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="badge-card">
+                    <img src="assets/icons/garantia3dias.png" alt="Garantía 3 días">
+                    <span>Garantía 3 Días</span>
+                </div>
+                <div class="badge-card">
+                    <img src="assets/icons/hostingincluido.png" alt="Hosting incluido">
+                    <span>Hosting Incluido</span>
+                </div>
+                <div class="badge-card">
+                    <img src="assets/icons/coberturatotal.png" alt="Cobertura total">
+                    <span>Cobertura Total</span>
+                </div>
+                <div class="badge-card">
+                    <img src="assets/icons/calidadpremium.png" alt="Calidad premium">
+                    <span>Calidad Premium</span>
+                </div>
+                <div class="badge-card">
+                    <img src="assets/icons/precioaccesible.png" alt="Precio accesible">
+                    <span>Precio Accesible</span>
+                </div>
+                <div class="badge-card">
+                    <img src="assets/icons/branding.png" alt="Branding básico">
+                    <span>Branding Básico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAQUETES WEB (Servicios - sin precios por ahora) -->
+    <section id="paquetes" class="paquetes section">
+        <div class="paquetes-img-bg">
+            <img src="assets/images/paquetesweb.png" alt="Paquetes Web fondo">
+            <div class="paquetes-img-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>PAQUETES WEB</h2>
+            </div>
+            
+            <div class="paquetes-grid">
+                <div class="paquete-card fade-in">
+                    <div class="paquete-icon icon-lottie" data-json="assets/lottie/personal.json"></div>
+                    <h3>Personal</h3>
+                    <ul class="paquete-features">
+                        <li>Portafolio o CV digital</li>
+                        <li>Diseño personalizado</li>
+                        <li>Hasta 3 secciones</li>
+                        <li>Formulario de contacto</li>
+                        <li>Hosting incluido</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más información</a>
+                </div>
+                <div class="paquete-card fade-in">
+                    <div class="paquete-icon icon-lottie" data-json="assets/lottie/business.json"></div>
+                    <h3>Business</h3>
+                    <ul class="paquete-features">
+                        <li>Sitio corporativo completo</li>
+                        <li>Hasta 6 secciones</li>
+                        <li>SEO básico incluido</li>
+                        <li>Integración redes sociales</li>
+                        <li>Hosting + dominio</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más información</a>
+                </div>
+                <div class="paquete-card fade-in">
+                    <div class="paquete-icon icon-lottie" data-json="assets/lottie/Restaurante.json"></div>
+                    <h3>Restaurantes</h3>
+                    <ul class="paquete-features">
+                        <li>Menú digital interactivo</li>
+                        <li>Sistema de reservas</li>
+                        <li>Galería de platillos</li>
+                        <li>Mapa y horarios</li>
+                        <li>Hosting incluido</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más información</a>
+                </div>
+                <div class="paquete-card fade-in">
+                    <div class="paquete-icon icon-lottie" data-json="assets/lottie/events.json"></div>
+                    <h3>Bodas / Eventos</h3>
+                    <ul class="paquete-features">
+                        <li>Invitación digital</li>
+                        <li>Confirmación RSVP</li>
+                        <li>Galería de fotos</li>
+                        <li>Cuenta regresiva</li>
+                        <li>Detalles del evento</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más información</a>
+                </div>
+                <div class="paquete-card fade-in">
+                    <div class="paquete-icon icon-lottie" data-json="assets/lottie/ecommerce.json"></div>
+                    <h3>E-commerce</h3>
+                    <ul class="paquete-features">
+                        <li>Tienda en línea completa</li>
+                        <li>Pasarela de pagos</li>
+                        <li>Gestión de inventario</li>
+                        <li>Carrito de compras</li>
+                        <li>Panel de administración</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="portafolio section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>PORTAFOLIO</h2>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="personales">Personales</button>
+                <button class="filter-btn" data-filter="corporativos">Corporativos</button>
+                <button class="filter-btn" data-filter="real-estate">Real Estate</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="restaurantes">Restaurantes</button>
+            </div>
+
+            <!-- Card Stack Carousel -->
+            <div class="card-stack-wrapper">
+                <div class="card-stack-stage" id="card-stack-stage"></div>
+                <div class="card-stack-dots" id="card-stack-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="team section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>MEET OUR TEAM</h2>
+                <p class="subtitle team-intro">Somos un emprendimiento mexicano, fundado por 2 especialistas egresados del Tecnológico de Monterrey, campus Monterrey. Todo lo que hacemos tiene un objetivo claro: <strong>convertir tráfico en ingresos.</strong><br><br>
+                Diseñamos páginas que impulsan decisiones. Optimizamos cada sección para generar acción. Medimos, ajustamos y escalamos. Si no vende, no sirve.<br><br>
+                Trabajamos con foco en rentabilidad, conversión, escalabilidad y crecimiento.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img bg-placeholder">
+                        <i class="fa-solid fa-user-tie fa-4x text-light"></i>
+                    </div>
+                    <h3>SANTIAGO C</h3>
+                    <ul class="member-details">
+                        <li>Exatec, campus Monterrey 2023</li>
+                        <li>Licenciado en Mercadotecnia, especialidad en e-commerce</li>
+                        <li>Background de agencia, corporativo y pymes</li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="member-img bg-placeholder">
+                        <i class="fa-solid fa-user-tie fa-4x text-light"></i>
+                    </div>
+                    <h3>FRANK R</h3>
+                    <ul class="member-details">
+                        <li>Exatec, campus Monterrey 2022</li>
+                        <li>Licenciado en Finanzas</li>
+                        <li>Especialista en Business Intelligence y Data Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto section bg-dark text-light">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>COTIZA TU PROYECTO</h2>
+                    <p>Déjanos tus datos y nos pondremos en contacto contigo a la brevedad para comenzar a darle forma a tus ideas.</p>
+                    
+                    <div class="info-item mt-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Cancún, Quintana Roo<br>San Pedro Garza García, N.L.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="quote-form">
+                        <div class="form-group">
+                            <label for="producto">Producto de Interés</label>
+                            <select id="producto" name="producto" required>
+                                <option value="" disabled selected>Selecciona un paquete...</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Business">Business</option>
+                                <option value="Restaurantes">Restaurantes</option>
+                                <option value="Bodas_Eventos">Bodas / Eventos</option>
+                                <option value="Ecommerce">E-commerce</option>
+                                <option value="Otro">Otro proyecto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="presupuesto">Presupuesto Estimado</label>
+                            <select id="presupuesto" name="presupuesto" required>
+                                <option value="" disabled selected>Selecciona un rango...</option>
+                                <option value="<6k">Menos de $6,000 MXN</option>
+                                <option value="6k-10k">$6,000 - $10,000 MXN</option>
+                                <option value="10k-20k">$10,000 - $20,000 MXN</option>
+                                <option value=">20k">Más de $20,000 MXN</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                            </div>
+                            <div class="form-group half">
+                                <label for="marca">Marca / Empresa</label>
+                                <input type="text" id="marca" name="marca" placeholder="Nombre de tu negocio">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de contacto">
+                            </div>
+                            <div class="form-group half">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">ENVIAR SOLICITUD</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>LUMKO</h2>
+                    <p>Diseño web. Rápido. Efectivo. A tu medida.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#paquetes">Paquetes</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUMKO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lottie for animated icons (ready for when JSONs are added) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
